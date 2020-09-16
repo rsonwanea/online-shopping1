@@ -10,17 +10,24 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
-		<javaee-version>8.0</javaee-version>
-		<spring-version>5.2.3.RELEASE</spring-version>
+		<javaee.version>8.0</javaee.version>
+		<spring.version>5.2.3.RELEASE</spring.version>
 	</properties>
 
 	<dependencies>
+
+		<!-- Link backend project -->
+		<dependency>
+			<groupId>net.kzn</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
-			<version>${javaee-version}</version>
+			<version>${javaee.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -28,7 +35,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${spring-version}</version>
+			<version>${spring.version}</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl -->
