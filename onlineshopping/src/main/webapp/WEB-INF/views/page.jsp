@@ -1,17 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-<<<<<<< HEAD
-	pageEncoding="ISO-8859-1" %>
-
-<%@page isELIgnored="false" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-=======
 	pageEncoding="ISO-8859-1"%>
 
 <%@page isELIgnored="false"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
->>>>>>> refs/remotes/origin/master
 
 <spring:url var="css" value="/resources/css" />
 <spring:url var="js" value="/resources/js" />
@@ -34,13 +26,19 @@
 
 <script>
 	window.menu = '${title }';
+
+	window.contextRoot = '${contextRoot}'
 </script>
 
 <!-- Bootstrap core CSS -->
 <link href="${css }/bootstrap.min.css" rel="stylesheet">
 
-<!-- theme CSS -->
+<!-- bootstrap readable theme CSS -->
 <link href="${css }/bootstrap.happen2.css" rel="stylesheet">
+
+<!-- datatables CSS -->
+<link href="${css }/dataTables.bootstrap.css" rel="stylesheet">
+
 
 
 <!-- Add custom CSS here -->
@@ -53,45 +51,37 @@
 	<div class="wrapper">
 
 		<!-- navigation bar-->
-<<<<<<< HEAD
-		<%@include file="./shared/navbar.jsp" %>
-=======
 		<%@include file="./shared/navbar.jsp"%>
->>>>>>> refs/remotes/origin/master
 
 		<!-- page content -->
 		<div class="content">
 			<!-- loading the home content -->
 			<c:if test="${userClickHome == true }">
-<<<<<<< HEAD
-				<%@include file="home.jsp" %>
-=======
 				<%@include file="home.jsp"%>
->>>>>>> refs/remotes/origin/master
 			</c:if>
 
 			<!-- Load only when user clicks about -->
 			<c:if test="${userClickAbout == true }">
-<<<<<<< HEAD
-				<%@include file="about.jsp" %>
-=======
 				<%@include file="about.jsp"%>
->>>>>>> refs/remotes/origin/master
 			</c:if>
 
 			<!-- Load only when user clicks contact -->
 			<c:if test="${userClickContact == true }">
 				<%@include file="contact.jsp"%>
 			</c:if>
-<<<<<<< HEAD
-			
+
 			<!-- Load only when user clicks contact -->
-			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
+			<c:if
+				test="${userClickAllProducts == true or userClickCategoryProducts == true }">
 				<%@include file="listProducts.jsp"%>
 			</c:if>
-=======
->>>>>>> refs/remotes/origin/master
- 
+			
+			<!-- Load only when user clicks show product -->
+			<c:if
+				test="${userClickShowProduct == true}">
+				<%@include file="singleProduct.jsp"%>
+			</c:if>
+			
 		</div>
 
 		<!-- footer -->
@@ -99,7 +89,17 @@
 
 		<!-- JavaScript -->
 		<script src="${js}/jquery.js"></script>
+
+		<!-- Bootstrap Core Javascript -->
 		<script src="${js}/bootstrap.min.js"></script>
+
+
+		<!-- datatables plugin -->
+		<script src="${js}/jquery.dataTables.js"></script>
+
+		<!-- datatables bootstrap script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+
 
 		<!-- self coded java script -->
 		<script src="${js}/myapp.js"></script>

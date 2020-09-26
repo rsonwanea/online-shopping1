@@ -1,57 +1,9 @@
-<<<<<<< HEAD
 <div class="container">
 
 	<div class="row">
 
 		<div class="col-md-3">
-			<%@include file="./shared/sidebar.jsp" %>
-		</div>
-
-		<div class="col-md-9">
-
-			<div class="row carousel-holder">
-
-				<div class="col-md-12">
-					<div id="carousel-example-generic" class="carousel slide"
-						data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0"
-								class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="item active">
-								<img class="slide-image" src="http://placehold.it/800x300"
-									alt="">
-							</div>
-							<div class="item">
-								<img class="slide-image" src="http://placehold.it/800x300"
-									alt="">
-							</div>
-							<div class="item">
-								<img class="slide-image" src="http://placehold.it/800x300"
-									alt="">
-							</div>
-						</div>
-						<a class="left carousel-control" href="#carousel-example-generic"
-							data-slide="prev">
-							 <span class="glyphicon glyphicon-chevron-left"></span>
-						</a> <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-							 <span class="glyphicon glyphicon-chevron-right"></span>
-=======
-
-<div class="container">
-
-	<div class="row">
-
-		<div class="col-md-3">
-			<p class="lead">Shop Name</p>
-			<div class="list-group">
-				<a href="#" class="list-group-item">Category</a>
-				<a href="#" class="list-group-item">Category 1</a>
-				<a href="#" class="list-group-item">Category 2</a>
-			</div>
+			<%@include file="./shared/sidebar.jsp"%>
 		</div>
 
 		<div class="col-md-9">
@@ -87,7 +39,6 @@
 						</a> <a class="right carousel-control"
 							href="#carousel-example-generic" data-slide="next"> <span
 							class="glyphicon glyphicon-chevron-right"></span>
->>>>>>> refs/remotes/origin/master
 						</a>
 					</div>
 				</div>
@@ -182,7 +133,7 @@
 							<p>This is a short description. Lorem ipsum dolor sit amet,
 								consectetur adipiscing elit.</p>
 						</div>
-						
+
 						<div class="ratings">
 							<p class="pull-right">6 reviews</p>
 							<p>
@@ -207,7 +158,7 @@
 							<p>This is a short description. Lorem ipsum dolor sit amet,
 								consectetur adipiscing elit.</p>
 						</div>
-						
+
 						<div class="ratings">
 							<p class="pull-right">18 reviews</p>
 							<p>
